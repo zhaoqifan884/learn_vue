@@ -6,16 +6,16 @@
 </head>
 <body>
 <div id="app">
-  <h2>{{message}}, hahaha</h2>
-<!--  v-text 仅渲染标签，不解析html-->
-  <h2 v-text="message">, hahaha</h2>
+  <h2>{{message}}</h2>
+<!--  v-pre: 直接显示，不编译-->
+  <h2 v-pre>{{message}}</h2>
 </div>
 <script src="../js/vue.js"></script>
 <script>
   const app = new Vue({
     el: "#app",
     data: {
-      message: "hello vue"
+      message: "hello"
     }
   })
 </script>
