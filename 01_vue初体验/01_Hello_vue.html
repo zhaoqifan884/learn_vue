@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app">
+  <h2>{{message}}</h2>
+  <h2>{{name}}</h2>
+</div>
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    //声明式编程
+    el: "#app",//用于挂载要管理的元素
+    data: {
+      //定义数据
+      message: "你好啊，李银河",
+      name: "Bill Chiu"
+    }
+  })
+  /**
+   * 1.创建div元素，设置id属性
+   * 2.定义一个message变量
+   * 3.将message变量放到div 元素中显示
+   */
+</script>
+</body>
+</html>
